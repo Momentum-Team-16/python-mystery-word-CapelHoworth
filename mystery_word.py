@@ -16,7 +16,7 @@ def play_game():
         read_list = my_list.read()
     split_list = read_list.split()
     my_word = random.choice(split_list).upper()
-    print(my_word)
+    #print(my_word)
     blanks = []
     wrong_guesses = []
     index = 0
@@ -37,7 +37,7 @@ def play_game():
 
         if len(guess) > 1 or not guess.isalpha():
             print(f"\nYa silly? 🤡 That's an invalid guess.")
-        elif guess in blanks:
+        elif guess in blanks or not remaining_letters:
             print(f'\nYa silly? 🤡 You already guessed that!')
         elif guess in my_letters:
             for index, letter in enumerate(my_letters):
@@ -52,6 +52,7 @@ def play_game():
     if wrong_guesses == 0:
         print(f'\nYou Lose! 🤬 \n{my_word}')
     else:
+        print(f'\n{my_word}')
         print(f'Congratulations! You Won! 🚀 🏆 🥳')
     play_again()
         

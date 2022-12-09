@@ -11,3 +11,10 @@ Make a finite number of guesses. The number does not decrease if the guess is co
 Bring in alphabet index/string? and pull them when user submits guess/input
 
 Upon game completion give replay option (y/n)
+
+You can write python so that it has and HTTP response. Figure it out.
+
+TODO:
+Fix losing parameter to show loss.
+
+Duplicate letters passing
