@@ -1,0 +1,13 @@
+Open test-word.txt and choose a word
+
+Choose random word from longer list
+    using random.choice()
+
+Divide word to register individual letters using *
+
+Make a finite number of guesses. The number does not decrease if the guess is correct.
+
+
+Bring in alphabet index/string? and pull them when user submits guess/input
+
+Upon game completion give replay option (y/n)
